@@ -1,28 +1,15 @@
-def r(a,b):
-     A = ord(a)
-     B = ord(b)
-     C = B - A
-     list1 = []
-     print(A)
-     list1.append(chr(A))
-     for i in range(C):
-       A=A+1
-       print(A)
-       list1.append(chr(A))
-     return list1
-
 def frange(x, y, jump=1.0):
     '''
     Range for floats.
-
+    
     Parameters:
       x: range starting value, will be included.
       y: range ending value, will be excluded
       jump: the step value. Only positive steps are supported.
-
+    
     Return:
       a generator that yields floats
-
+    
     Usage:
     >>> list(frange(0, 1, 0.2))
     [0.0, 0.2, 0.4, 0.6000000000000001, 0.8]
@@ -32,7 +19,7 @@ def frange(x, y, jump=1.0):
     [0.0]
     >>> list(frange(0.0, 0.15, 0.1))
     [0.0, 0.1]
-
+    
     '''
     i = 0.0
     x = float(x)  # Prevent yielding integers.
